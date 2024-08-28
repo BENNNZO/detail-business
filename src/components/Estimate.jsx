@@ -90,7 +90,7 @@ export default function Estimate() {
     }, [currentQuestion]);
 
     return (
-        <div className="grid place-items-center min-h-screen">
+        <div className="grid place-items-center min-h-screen z-10">
             <motion.div
                 className="backdrop-blur-md backdrop-brightness-75 border border-white/10 rounded-sm text-white overflow-hidden"
                 animate={{ width: containerWidth }}
