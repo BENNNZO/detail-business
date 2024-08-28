@@ -84,9 +84,20 @@ export default function Estimate() {
     };
 
     useEffect(() => {
-        if (containerRef.current) {
-            setContainerWidth(containerRef.current.getBoundingClientRect().width);
-        }
+        const updateContainerWidth = () => {
+            if (containerRef.current) {
+                setContainerWidth(containerRef.current.getBoundingClientRect().width);
+            }
+        };
+
+        updateContainerWidth();
+        
+        // Recalculate on window resize, too
+        window.addEventListener('resize', updateContainerWidth);
+
+        return () => {
+            window.removeEventListener('resize', updateContainerWidth);
+        };
     }, [currentQuestion]);
 
     return (
@@ -96,7 +107,7 @@ export default function Estimate() {
                 animate={{ width: containerWidth }}
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
             >
-                <div ref={containerRef} className="px-12 py-8 inline-block">
+                <div ref={containerRef} className="px-4 py-6 md:px-12 md:py-8 inline-block">
                     {currentQuestion < questions.length ? (
                         <motion.div
                             key={currentQuestion}
@@ -105,13 +116,13 @@ export default function Estimate() {
                             exit={{ x: -25, opacity: 0 }}
                             transition={{ type: "spring", stiffness: 300, damping: 30 }}
                         >
-                            <h2 className="text-xl font-bold mb-4">{questions[currentQuestion].text}</h2>
-                            <div className="flex flex-row gap-2">
+                            <h2 className="text-md w-52 md:w-auto text-center md:text-left md:text-xl font-bold mb-4 whitespace-normal md:whitespace-nowrap">{questions[currentQuestion].text}</h2>
+                            <div className="flex flex-col md:flex-row gap-2 items-center">
                                 {questions[currentQuestion].answers.map((answer, index) => (
                                     <div
                                         key={index}
                                         onClick={() => handleAnswerClick(answer)}
-                                        className="cursor-pointer w-44 h-44 flex flex-col justify-around gap-6 items-center border border-white/5 hover:border-white/15 px-4 py-2 rounded-sm backdrop-blur-md backdrop-brightness-110 hover:backdrop-brightness-125 duration-100"
+                                        className="cursor-pointer w-36 h-36 md:w-44 md:h-44 flex flex-col justify-around gap-6 items-center border border-white/5 hover:border-white/15 px-4 py-2 rounded-sm backdrop-blur-md backdrop-brightness-110 hover:backdrop-brightness-125 duration-100"
                                     >
                                         <img src={answer.image} alt={answer.text} className="w-16 h-16 invert my-2" />
                                         <p className="text-center">{answer.text}</p>
