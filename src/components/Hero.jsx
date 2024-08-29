@@ -7,7 +7,7 @@ export default function Hero() {
             <Estimate />
             <Image 
                 className="h-full w-full asbolute"
-                src="/images/hero.jpg"
+                src="/images/hero.webp"
                 layout="fill"
                 objectFit="cover"
                 quality={100}
