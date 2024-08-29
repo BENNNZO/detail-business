@@ -103,7 +103,7 @@ export default function Estimate() {
     return (
         <div className="grid place-items-center min-h-screen z-10 left-1/2 -translate-x-1/2 -translate-y-1/2 md:left-0 md:-translate-x-0 md:-translate-y-0 absolute top-[calc(50%-2rem)] md:static md:top-0">
             <motion.div
-                className="backdrop-blur-md backdrop-brightness-75 border border-white/10 rounded-sm text-white overflow-hidden"
+                className="backdrop-blur-xl backdrop-brightness-[65%] border border-zinc-800/50 rounded-sm text-white overflow-hidden"
                 animate={{ width: containerWidth }}
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
             >
@@ -122,7 +122,7 @@ export default function Estimate() {
                                     <div
                                         key={index}
                                         onClick={() => handleAnswerClick(answer)}
-                                        className="cursor-pointer w-36 h-36 md:w-44 md:h-44 flex flex-col justify-around gap-6 items-center border border-white/5 hover:border-white/15 px-4 py-2 rounded-sm backdrop-blur-md backdrop-brightness-110 hover:backdrop-brightness-125 duration-100"
+                                        className="cursor-pointer w-36 h-36 md:w-44 md:h-44 flex flex-col justify-around gap-6 items-center border border-zinc-800/25 hover:border-zinc-800 px-4 py-2 rounded-sm backdrop-blur-xl backdrop-brightness-125 hover:backdrop-brightness-150 duration-100"
                                     >
                                         <img src={answer.image} alt={answer.text} className="w-16 h-16 invert my-2" />
                                         <p className="text-center">{answer.text}</p>
