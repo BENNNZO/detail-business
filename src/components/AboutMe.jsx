@@ -5,7 +5,7 @@ export default function AboutMe() {
                 <h2 className="text-4xl font-bold mb-4">About Me</h2>
                 <p>Hi! I&apos;m <span className="font-bold text-green-400 text-xl">Ben</span> the founder and owner of <strong>Ben&apos;s Auto Detailing!</strong></p>
                 <p>Currently I am working anywhere in the <strong>CSRA</strong> any day of the week!</p>
-                <p>I've been detailing my Dodge Challenger for years now and have decided to take my skills to the world!</p>
+                <p>I&apos;ve been detailing my Dodge Challenger for years now and have decided to take my skills to the world!</p>
                 <p>Give me a call <strong>anytime</strong> and I will be happy to schedule you a professional car detail!</p>
                 <p>Phone: <span className="font-bold text-yellow-400">(706) 830 - 0401</span></p>
             </div>
