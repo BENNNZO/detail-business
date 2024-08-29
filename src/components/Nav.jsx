@@ -1,6 +1,6 @@
 export default function Nav() {
     return (
-        <nav className="backdrop-blur-lg z-20 backdrop-brightness-75 fixed top-0 left-0 w-full h-16 py-2 flex flex-row justify-between items-center px-6 border-b border-white/10">
+        <nav className="backdrop-blur-xl z-30 backdrop-brightness-50 fixed md:top-0 bottom-0 left-0 w-full h-16 py-2 flex flex-row justify-between items-center px-6 border-t md:border-b border-white/10">
             <a href="#home" className="h-full">
                 <img 
                     src="/images/logo-text-white.png"

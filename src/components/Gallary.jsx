@@ -28,7 +28,7 @@ export default function Gallery() {
     ];
 
     return (
-        <section className="z-30 text-white relative" id='gallary'>
+        <section className="z-20 text-white relative" id='gallary'>
             <div className='w-12 md:w-56 h-full bg-gradient-to-r from-zinc-950 to-transparent z-10 absolute top-0 left-0'></div>
             <div className='w-12 md:w-56 h-full bg-gradient-to-l from-zinc-950 to-transparent z-10 absolute top-0 right-0'></div>
             <div className="flex flex-col gap-4 py-4">
@@ -41,8 +41,6 @@ export default function Gallery() {
 }
 
 function ImageScroller({ images, left }) {
-
-    console.log(left)
     const scrollerRef = useRef(null);
 
     useEffect(() => {
