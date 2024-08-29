@@ -3,7 +3,7 @@ import Estimate from "./Estimate"
 
 export default function Hero() {
     return (
-        <section className="h-screen grid place-items-center">
+        <section className="h-screen grid place-items-center" id="home">
             <Estimate />
             <Image 
                 className="h-full w-full asbolute"

@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .animate-scroll-left {
+        animation: left var(--animation-duration) linear infinite;
+    }
+
+    .animate-scroll-right {
+        animation: right var(--animation-duration) linear infinite;
+    }
+
+    @keyframes left {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(calc(var(--scroll-width) * -1));
+        }
+    }
+
+    @keyframes right {
+        from {
+            transform: translateX(calc(var(--scroll-width) * -1));
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+}
