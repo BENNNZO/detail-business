@@ -12,7 +12,7 @@ export default function Hero() {
                 objectFit="cover"
                 quality={100}
                 placeholder="blur"
-                blurDataURL="/images/hero.jpg"
+                blurDataURL="/images/hero.webp"
                 priority
             />
             <div className="absolute bottom-0 left-0 w-full h-3/4 bg-gradient-to-t from-zinc-950 to-transparent"></div>

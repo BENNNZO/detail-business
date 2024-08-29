@@ -9,7 +9,7 @@ export default function AboutMe() {
                 <p>Give me a call <strong>anytime</strong> and I will be happy to schedule you a professional car detail!</p>
                 <p>Phone: <span className="font-bold text-yellow-400">(706) 830 - 0401</span></p>
             </div>
-            <img src="/images/profile.jpg" alt="picture of me (ben)" className="w-96 rounded-md shadow-md object-cover" />
+            <img src="/images/profile.webp" alt="picture of me (ben)" className="w-96 rounded-md shadow-md object-cover" />
         </section>
     )
 }

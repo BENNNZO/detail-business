@@ -5,25 +5,25 @@ import React, { useEffect, useRef } from 'react';
 export default function Gallery() {
     const imageGroups = [
         [
-            "/images/gallary/acura_1.jpeg",
-            "/images/gallary/acura_2.jpeg",
-            "/images/gallary/acura_3.jpeg",
-            "/images/gallary/acura_4.jpeg",
+            "/images/gallary/acura_1.webp",
+            "/images/gallary/acura_2.webp",
+            "/images/gallary/acura_3.webp",
+            "/images/gallary/acura_4.webp",
         ],
         [
-            "/images/gallary/challenger_1.jpeg",
-            "/images/gallary/challenger_2.jpeg",
-            "/images/gallary/challenger_3.jpeg",
+            "/images/gallary/challenger_1.webp",
+            "/images/gallary/challenger_2.webp",
+            "/images/gallary/challenger_3.webp",
         ],
         [
-            "/images/gallary/lexus_1.jpeg",
-            "/images/gallary/lexus_2.jpeg",
-            "/images/gallary/lexus_3.jpeg",
-            "/images/gallary/lexus_4.jpeg",
-            "/images/gallary/lexus_5.jpeg",
-            "/images/gallary/lexus_6.jpeg",
-            "/images/gallary/lexus_7.jpeg",
-            "/images/gallary/lexus_8.jpeg",
+            "/images/gallary/lexus_1.webp",
+            "/images/gallary/lexus_2.webp",
+            "/images/gallary/lexus_3.webp",
+            "/images/gallary/lexus_4.webp",
+            "/images/gallary/lexus_5.webp",
+            "/images/gallary/lexus_6.webp",
+            "/images/gallary/lexus_7.webp",
+            "/images/gallary/lexus_8.webp",
         ],
     ];
 
