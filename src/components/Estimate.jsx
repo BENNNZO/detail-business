@@ -16,7 +16,7 @@ const questions = [
         text: "Is your vehicle a sedan or SUV?",
         answers: [
             { text: "Sedan", image: "/images/sedan.png" },
-            { text: "SUV", image: "/images/suv.png" },
+            { text: "SUV / Truck", image: "/images/suv.png" },
         ],
     },
     {
@@ -138,7 +138,7 @@ export default function Estimate() {
                         >
                             {/* Final content after questions */}
                             <p className="text-center whitespace-nowrap">Estimated Cost: <span className="font-bold text-green-500">${totalCost}</span></p>
-                            <p className="text-center whitespace-nowrap mt-2">Call today! <span className="font-bold">(706) 830 - 0401</span></p>
+                            <p className="text-center whitespace-nowrap mt-2">Call or text today! <span className="font-bold">(706) 830 - 0401</span></p>
                         </motion.div>
                     )}
                 </div>
